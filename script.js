@@ -75,7 +75,7 @@ function initializeCharts() {
 }
 
 function fetchMetrics() {
-    fetch('http://192.168.0.106:8080/metrics')
+    fetch('https://192.168.0.106:8080/metrics')
         .then(response => response.json())
         .then(data => {
             console.log(data)
@@ -143,7 +143,7 @@ function updateTable() {
 }
 
 function simulateRequest(method) {
-    fetch(`http://192.168.0.106:8080/`, {
+    fetch(`https://192.168.0.106:8080/`, {
         method: method,
     }).then(fetchMetrics);
 }
