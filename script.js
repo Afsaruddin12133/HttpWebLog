@@ -143,7 +143,7 @@ function updateTable() {
 }
 
 function simulateRequest(method) {
-    fetch(`http://localhost:8080/`, {
+    fetch(`http://192.168.0.106:8080/`, {
         method: method,
     }).then(fetchMetrics);
 }
