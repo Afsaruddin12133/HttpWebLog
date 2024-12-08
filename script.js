@@ -75,7 +75,7 @@ function initializeCharts() {
 }
 
 function fetchMetrics() {
-    fetch('http://localhost:8080/metrics')
+    fetch('http://192.168.0.106:8080/metrics')
         .then(response => response.json())
         .then(data => {
             console.log(data)
